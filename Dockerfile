@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch-slim
+FROM arm64v8/debian:stretch-slim
   # WORKING: work around openjdk issue which expects the man-page directory, failing to configure package if it doesn't
 # FROM debian:stretch-slim
   # needs minor fixes to get working but results in much larger image
@@ -10,7 +10,7 @@ MAINTAINER Jacob Alberty <jacob.alberty@foundigital.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ubnt.com/unifi/5.5.24/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ubnt.com/unifi/5.6.19/unifi_sysvinit_all.deb
 
 ENV BASEDIR=/usr/lib/unifi \
     DATADIR=/unifi/data \
