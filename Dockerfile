@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch-slim
+FROM arm64v8/debian:stretch-slim
   # WORKING: work around openjdk issue which expects the man-page directory, failing to configure package if it doesn't
 # FROM debian:stretch-slim
   # needs minor fixes to get working but results in much larger image
